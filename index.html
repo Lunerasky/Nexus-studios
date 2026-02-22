@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Studio | Digital Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #ffd700;
+            --bg: #050505;
+            --card: #121212;
+            --text-gray: #a0a0a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: white; font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .hero h1 { font-size: 3rem; color: var(--gold); letter-spacing: -1px; font-weight: 800; }
+        .hero p { color: var(--text-gray); margin-top: 15px; font-size: 1rem; max-width: 600px; margin-inline: auto; }
+
+        /* Grid Jasa */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 35px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.1);
+        }
+
+        .card-tag {
+            font-size: 0.7rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card h3 { font-size: 1.6rem; margin-bottom: 12px; }
+        .card p { color: var(--text-gray); font-size: 0.9rem; margin-bottom: 25px; flex-grow: 1; }
+
+        .price-tag {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .btn-wa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold);
+            color: black;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 14px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn-wa:hover { transform: scale(1.03); filter: brightness(1.1); }
+
+        /* Payment Section */
+        .payment-methods {
+            margin-top: 80px;
+            text-align: center;
+            padding: 40px;
+            border-top: 1px dashed rgba(255, 215, 0, 0.2);
+        }
+
+        .payment-methods h4 { margin-bottom: 20px; font-size: 0.9rem; letter-spacing: 3px; opacity: 0.6; }
+        
+        .bank-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .bank-icons span {
+            background: rgba(255,255,255,0.05);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        footer { text-align: center; padding: 60px 20px; font-size: 0.8rem; color: #555; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>NEXUS STUDIO</h1>
+        <p>Agensi kreatif digital untuk meningkatkan kualitas brand dan personal kamu.</p>
+    </section>
+
+    <div class="container">
+        <div class="services-grid">
+            
+            <div class="card">
+                <div>
+                    <div class="card-tag">Web Development</div>
+                    <h3>Bio-Link Pro</h3>
+                    <p>Website satu halaman estetik untuk semua link sosial media kamu. Dilengkapi animasi mewah.</p>
+                </div>
+                <div class="price-tag">Rp 100rb</div>
+                <a href="https://wa.me/628976330627?text=Halo%20Nexus%20Studio%20saya%20mau%20jasa%20Bio%20link20%pro" class="btn-wa">Pesan Sekarang</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-tag">Event Hub</div>
+                    <h3>E-Invitation</h3>
+                    <p>Undangan digital untuk ultah atau acara spesial. Fitur: Google Maps & Konfirmasi WA.</p>
+                </div>
+                <div class="price-tag">Rp 100-300rb</div>
+                <a href="https://wa.me/628976330627?text=Halo%20Nexus%20Studio%20saya%20mau%20E-Invitation" class="btn-wa">Pesan Sekarang</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-tag">Business</div>
+                    <h3>Landing Page</h3>
+                    <p>Satu halaman promosi produk/toko online kamu agar terlihat profesional dan terpercaya.</p>
+                </div>
+                <div class="price-tag">Rp 400rb+</div>
+                <a href="https://wa.me/628976330627?text=Halo%20Nexus%20Studio%20saya%20mau%20pesan%20Landing%20Page" class="btn-wa">Pesan Sekarang</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-tag">Visual Art</div>
+                    <h3>PPT Presentation</h3>
+                    <p>Bikin tugas presentasi sekolah atau kantor jadi naik level dengan desain minimalis pro.</p>
+                </div>
+                <div class="price-tag">Rp 40-100rb+</div>
+                <a href="https://wa.me/628976330627?text=Halo%20Nexus%20Studio%20saya%20mau%20pesan%20PPT%20Design" class="btn-wa">Pesan Sekarang</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-tag">Video Editing</div>
+                    <h3>TikTok/Reels Edit</h3>
+                    <p>Edit video mentahan kamu jadi konten yang estetik dengan subtitle dan sound viral.</p>
+                </div>
+                <div class="price-tag">Rp 50-200rb+</div>
+                <a href="https://wa.me/628976330627?text=Halo%20Nexus%20Studio%20saya%20mau%20pesan%20Video%20Edit" class="btn-wa">Pesan Sekarang</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-tag">Custom</div>
+                    <h3>Private Request</h3>
+                    <p>Punya kebutuhan digital lain? Diskusikan dengan kami, kami akan buatkan solusinya.</p>
+                </div>
+                <div class="price-tag">Negotiable</div>
+                <a href="https://wa.me/628976330627?text=Halo%20Nexus%20Studio%20saya%20mau%20diskusi%20Custom%20Project" class="btn-wa">Chat Admin</a>
+            </div>
+
+        </div>
+
+        <div class="payment-methods">
+            <h4>METODE PEMBAYARAN</h4>
+            <div class="bank-icons">
+                <span>DANA</span>
+                <span>GOPAY</span>
+                <span>OVO</span>
+                <span>SHOPEEPAY</span>
+                <span>QRIS</span>
+                <span>ALL BANK</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 NEXUS DIGITAL STUDIO. Trusted Digital Partner.
+    </footer>
+
+</body>
+</html>
